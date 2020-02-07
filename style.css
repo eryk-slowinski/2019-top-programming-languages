@@ -15,6 +15,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-size: 30px;
+    margin: 30px 30px;
+}
+
 .draggable-list {
     border: 2px solid #c1c5c3;
     color: #17201a;
@@ -47,7 +52,7 @@ body {
     padding-left: 30px;
 }
 
-.draggable-list li.right .language-name {
+.draggable-list li.correct .language-name {
     color: rgb(13, 165, 13);
 }
 
@@ -67,12 +72,13 @@ body {
     background-color: rgba(92, 96, 211, 0.4);
 }
 
-
 .check-btn {
     font-size: 20px;
     padding: 6px 10px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(185, 174, 174);
 }
 
 .check-btn:active {
