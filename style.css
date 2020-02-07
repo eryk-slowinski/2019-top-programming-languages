@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(76deg, rgba(134, 137, 213, 1) 0%, rgba(102, 204, 240, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.draggable-list {
+    border: 2px solid #c1c5c3;
+    color: #17201a;
+    padding: 0;
+    list-style-type: none;
+}
+
+.draggable-list li {
+    display: flex;
+    flex: 1;
+}
+
+.draggable-list li:not(:last-of-type) {
+    border-bottom: 1px solid black;
+}
+
+.draggable-list .number {
+    background-color: rgb(212, 208, 208);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
+}
+
+.draggable-list .language-name {
+    margin: 0 20px 0 0;
+    width: 200px;
+    padding-left: 30px;
+}
+
+.draggable-list li.right .language-name {
+    color: rgb(13, 165, 13);
+}
+
+.draggable-list li.wrong .language-name {
+    color: rgb(224, 32, 32);
+}
+
+.draggable {
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.draggable-list li.over .draggable {
+    background-color: rgba(92, 96, 211, 0.4);
+}
+
+
+.check-btn {
+    font-size: 20px;
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.check-btn:active {
+    transform: scale(0.99);
+}
+
+.check-btn:focus {
+    outline: 0;
+}
